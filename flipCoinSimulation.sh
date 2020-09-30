@@ -16,5 +16,14 @@ do
 	fi
 done
 
-echo "Head won $head times"
-echo "Tail won $tail times"
+if [ $head -eq $tail ]
+then
+    echo "Tie"
+elif [ $head -gt $tail ]
+then
+    echo "Heads won by $head times"
+else
+    echo "Tails won by $tail times"
+fi
+
+
